@@ -9,9 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Variable League</title>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.jpg" />
   <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
@@ -29,27 +27,30 @@
   <meta name="msapplication-TileColor" content="#F9A664">
   <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
   <meta name="theme-color" content="#F9A664">
-  <meta property="og:image" content="https://variable-league.herokuapp.com/assets/favicon.png">
-  <meta name="twitter:image" content="https://variable-league.herokuapp.com/assets/favicon.png">
-  <meta itemprop="image" content="https://variable-league.herokuapp.com/assets/favicon.png">
+  <meta property="og:image" content="https://variable-league.herokuapp.com/assets/favicon.jpg">
+  <meta name="twitter:image" content="https://variable-league.herokuapp.com/assets/favicon.jpg">
+  <meta itemprop="image" content="https://variable-league.herokuapp.com/assets/favicon.jpg">
   <meta name="msapplication-navbutton-color" content="#F9A664">
 </head>
 
 <body>
   <div id="preview-container">
-    <div id="preview">League Mono</div>
+    <div id="preview">Start typing</div>
   </div>
-  <textarea class="heading" spellcheck="false" autofocus="" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+  <textarea class="heading" spellcheck="false" autofocus="" autocomplete="off" autocorrect="off"
+    autocapitalize="off"></textarea>
   <script src="league.js"></script>
   <div id="attribution">
     <div class="slidecontainer">
       <p>Weight</p>
-      <input type="range" min="30" max="200" step="0" value="80" class="slider" id="weight">
+      <input type="range" min="30" max="200" step="0" value="80" class="slider" id="weight"
+        oninput="setWeight(this.value)" onchange="setWeight(this.value)">
     </div>
     <br>
     <div class="slidecontainer">
       <p>Width</p>
-      <input type="range" min="50" max="200" step="0" value="100" class="slider" id="width">
+      <input type="range" min="50" max="200" step="0" value="100" class="slider" id="width"
+        oninput="setWidth(this.value)" onchange="setWidth(this.value)">
     </div>
     <br><br>
     <p>Crafted by <a href="http://abhinavbassi.com/" target="_blank">Abhinav Bassi</a> in Bethlehem</p>
