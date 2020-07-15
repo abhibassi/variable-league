@@ -1,0 +1,16 @@
+{
+  "name": "Variable League",
+  "short_name": "Variable League",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "background_color": "#F9A664",
+  "theme_color": "#F9A664",
+  "display": "fullscreen"
+}
